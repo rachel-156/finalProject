@@ -10,9 +10,51 @@ import SwiftUI
 struct trackerView: View {
     var body: some View {
         NavigationStack{
-            VStack{
-                Text("Click here to track your progress")
-                Button("Sleep Tracker"){
+            ZStack{
+                Color(red: 241/255, green: 239/255, blue: 231/255)
+                    .ignoresSafeArea()
+                VStack{
+                    HStack{
+                        Spacer()
+                        Image("Logo")
+                            .resizable(resizingMode: .stretch)
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 200, height: 200)
+                    }
+                    Text("Click here to track your progress")
+                        .font(.title)
+                        .fontWeight(.semibold)
+                        .multilineTextAlignment(.center)
+                    NavigationLink(destination: sleepTrackerView()) {
+                        Text("Sleep Tracker")
+                            .font(.title2)
+                            .fontWeight(.semibold)
+                            .foregroundColor(Color.white)
+                            .padding()
+                            .background(Color.cyan)
+                            .cornerRadius(8)
+                            .padding()
+                    }
+                    NavigationLink(destination: moodTrackerView()) {
+                        Text("Mood Tracker")
+                            .font(.title2)
+                            .fontWeight(.semibold)
+                            .foregroundColor(Color.white)
+                            .padding()
+                            .background(Color.cyan)
+                            .cornerRadius(8)
+                            .padding()
+                    }
+                    NavigationLink(destination: studyTrackerView()) {
+                        Text("Study Tracker")
+                            .font(.title2)
+                            .fontWeight(.semibold)
+                            .foregroundColor(Color.white)
+                            .padding()
+                            .background(Color.cyan)
+                            .cornerRadius(8)
+                            .padding()
+                    }
                 }
             }
         }
