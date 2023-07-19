@@ -22,7 +22,7 @@ struct ContentView: View {
                 .tag(0)
             trackerView()
                 .tabItem {
-                    Image(systemName: "house.fill")
+                    Image(systemName: "calendar.circle.fill")
                     VStack{
                         Text("Tracker")
                     }
