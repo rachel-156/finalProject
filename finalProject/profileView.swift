@@ -38,7 +38,7 @@ struct profileView: View {
                     
                     Button("Login") {
                         if(validLogin(user: username, pass: password) == "correct"){
-                            
+                            loginMessage = validLogin(user: username, pass: password)
                             NavigationLink(destination: homeView()){
                             }
                         } else{
