@@ -37,12 +37,10 @@ struct profileView: View {
                     
                     
                     Button("Login") {
-                        if(validLogin(user: username, pass: password) == "correct"){
-                            loginMessage = validLogin(user: username, pass: password)
+                        loginMessage = validLogin(user: username, pass: password)
+                        if(loginMessage == "correct"){
                             NavigationLink(destination: homeView()){
                             }
-                        } else{
-                            loginMessage = validLogin(user: username, pass: password)
                         }
                     }
                     .font(.title2)
