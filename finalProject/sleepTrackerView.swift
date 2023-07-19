@@ -8,8 +8,22 @@
 import SwiftUI
 
 struct sleepTrackerView: View {
+    /*
+    var startTime: String
+    var endTime: String
+    func calculateSleep(startTime: String, endTime: String) {
+        if startTime.suffix(2) == "AM" {
+            startTime = String(12 - Int(startTime.dropLast(3)))
+        }
+    }
+     */
     var body: some View {
-        Text("This is the Sleep Tracker")
+        VStack{
+            Text("This is the Sleep Tracker")
+            //TextField("Time you went to sleep:", text: startTime)
+            //TextField("Time you woke up:", text: endTime)
+        }
+        .padding()
     }
 }
 
