@@ -19,21 +19,21 @@ struct ContentView: View {
                 }
                 .tag(0)
             
-            Text("Search")
+            searchView()
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                     Text("Search")
                 }
                 .tag(1)
             
-            Text("My Channels")
+            myChannelsView()
                 .tabItem {
                     Image(systemName: "ellipsis.message")
                     Text("My Channels")
                 }
                 .tag(3)
             
-            Text("Profile")
+            profileView()
                 .tabItem {
                     Image(systemName: "person.fill")
                     Text("Profile")
