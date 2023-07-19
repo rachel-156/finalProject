@@ -12,12 +12,22 @@ struct ContentView: View {
     
     var body: some View {
         TabView(selection: $selectedTab) {
-            Text("Home")
+            homeView()
                 .tabItem {
                     Image(systemName: "house.fill")
-                    Text("Home")
+                    VStack{
+                        Text("Home")
+                    }
                 }
                 .tag(0)
+            trackerView()
+                .tabItem {
+                    Image(systemName: "house.fill")
+                    VStack{
+                        Text("Tracker")
+                    }
+                }
+                .tag(4)
             
             searchView()
                 .tabItem {
