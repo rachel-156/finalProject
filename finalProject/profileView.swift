@@ -45,6 +45,7 @@ struct profileView: View {
                     }
                     .font(.title2)
                     .padding(.trailing)
+                    
                     Text(loginMessage)
                         .font(.title)
                         .fontWeight(.medium)
