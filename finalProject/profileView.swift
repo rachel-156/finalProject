@@ -8,8 +8,32 @@
 import SwiftUI
 
 struct profileView: View {
+    
+    @State private var username: String = ""
+    @State private var password: String = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            VStack{
+                TextField(" Username", text: $username)
+                    .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+                    .padding(.horizontal)
+                    .font(.title)
+                
+                TextField(" Password", text: $password)
+                    .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+                    .padding(.horizontal)
+                    .font(.title)
+                
+                NavigationLink(destination: ContentView()) {
+                    Text("Login")
+                }
+                .padding(.trailing)
+                .font(.title2)
+            }
+            
+        }
+        
     }
 }
 
