@@ -11,6 +11,7 @@
 		592FC0272A698A2B00EB6429 /* MentalHealth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592FC0262A698A2B00EB6429 /* MentalHealth.swift */; };
 		592FC0292A698A4900EB6429 /* Tutoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592FC0282A698A4900EB6429 /* Tutoring.swift */; };
 		592FC02B2A698A9E00EB6429 /* GeneralHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592FC02A2A698A9E00EB6429 /* GeneralHelp.swift */; };
+		592FC04C2A69F37200EB6429 /* studyTrackerView-Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592FC04B2A69F37200EB6429 /* studyTrackerView-Model.swift */; };
 		8C7CAE842A68259C002734C7 /* homeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7CAE832A68259C002734C7 /* homeView.swift */; };
 		8C7CAE882A6825D1002734C7 /* myChannelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7CAE872A6825D1002734C7 /* myChannelsView.swift */; };
 		8C7CAE8A2A6825DD002734C7 /* profileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7CAE892A6825DD002734C7 /* profileView.swift */; };
@@ -29,6 +30,7 @@
 		592FC0262A698A2B00EB6429 /* MentalHealth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentalHealth.swift; sourceTree = "<group>"; };
 		592FC0282A698A4900EB6429 /* Tutoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutoring.swift; sourceTree = "<group>"; };
 		592FC02A2A698A9E00EB6429 /* GeneralHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralHelp.swift; sourceTree = "<group>"; };
+		592FC04B2A69F37200EB6429 /* studyTrackerView-Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "studyTrackerView-Model.swift"; sourceTree = "<group>"; };
 		8C7CAE832A68259C002734C7 /* homeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeView.swift; sourceTree = "<group>"; };
 		8C7CAE872A6825D1002734C7 /* myChannelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myChannelsView.swift; sourceTree = "<group>"; };
 		8C7CAE892A6825DD002734C7 /* profileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileView.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				D5BFC5852A6832F800C208D2 /* sleepTrackerView.swift */,
 				D5BFC5872A68333900C208D2 /* moodTrackerView.swift */,
 				D5BFC5892A68335900C208D2 /* studyTrackerView.swift */,
+				592FC04B2A69F37200EB6429 /* studyTrackerView-Model.swift */,
 				8C7CAE872A6825D1002734C7 /* myChannelsView.swift */,
 				592FC02A2A698A9E00EB6429 /* GeneralHelp.swift */,
 				592FC0282A698A4900EB6429 /* Tutoring.swift */,
@@ -175,6 +178,7 @@
 				D5BFC5882A68333900C208D2 /* moodTrackerView.swift in Sources */,
 				8CE7A24D2A619596000C44EA /* ContentView.swift in Sources */,
 				592FC0292A698A4900EB6429 /* Tutoring.swift in Sources */,
+				592FC04C2A69F37200EB6429 /* studyTrackerView-Model.swift in Sources */,
 				592FC0272A698A2B00EB6429 /* MentalHealth.swift in Sources */,
 				8C7CAE8A2A6825DD002734C7 /* profileView.swift in Sources */,
 				8C7CAE882A6825D1002734C7 /* myChannelsView.swift in Sources */,
