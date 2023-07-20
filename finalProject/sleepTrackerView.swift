@@ -41,8 +41,15 @@ struct sleepTrackerView: View {
     }
     
     func calculateTimeDifference(start: Date, end: Date) -> (hours: Int, minutes: Int) {
-        let timeInterval = end.timeIntervalSince(start)
-        let minutes = Int(timeInterval / 60)
+        // Adjust end time if it's earlier than the start time (indicating that it spans across different days)
+        var adjustedEndTime = end
+        if end < start {
+            adjustedEndTime = Calendar.current.date(byAdding: .day, value: 1, to: end) ?? end
+        }
+
+        let timeInterval = adjustedEndTime.timeIntervalSince(start)
+        let absoluteTimeInterval = abs(timeInterval)
+        let minutes = Int(absoluteTimeInterval / 60)
         let hours = minutes / 60
         return (hours, minutes % 60)
     }
