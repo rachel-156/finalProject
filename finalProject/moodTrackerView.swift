@@ -54,16 +54,17 @@ struct moodTrackerView: View {
                             .foregroundColor(Color.white)
                             .multilineTextAlignment(.center)
                             .padding()
-                            .background(Color.cyan)
+                            .background(Color(red: 128/255.0, green: 155/255.0, blue: 205/255.0))
                             .cornerRadius(8)
                             .padding()
+                            
                         NavigationLink(destination: myChannelsView()) {
                             Text("Click to express your feelings")
                                 .font(.title3)
                                 .fontWeight(.semibold)
                                 .foregroundColor(Color.white)
                                 .padding()
-                                .background(Color.cyan)
+                                .background(Color(red: 128/255.0, green: 155/255.0, blue: 205/255.0))
                                 .cornerRadius(8)
                         }
                     }

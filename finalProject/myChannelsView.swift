@@ -31,7 +31,7 @@ struct myChannelsView: View {
                         .fontWeight(.semibold)
                         .foregroundColor(Color.white)
                         .padding()
-                        .background(Color.cyan)
+                        .background(Color(red: 234/255.0, green: 196/255.0, blue: 213/255.0))
                         .cornerRadius(8)
                         .padding()
                 }
@@ -42,8 +42,7 @@ struct myChannelsView: View {
                         .fontWeight(.semibold)
                         .foregroundColor(Color.white)
                         .padding()
-                        .background(Color.cyan)
-                        .cornerRadius(8)
+                        .background(Color(red: 184/255.0, green: 224/255.0, blue: 210/255.0))         .cornerRadius(8)
                         .padding()
                 }
                 
@@ -53,7 +52,7 @@ struct myChannelsView: View {
                         .fontWeight(.semibold)
                         .foregroundColor(Color.white)
                         .padding()
-                        .background(Color.cyan)
+                        .background(Color(red: 149/255.0, green: 180/255.0, blue: 201/255.0))
                         .cornerRadius(8)
                         .padding()
                 }
@@ -64,8 +63,7 @@ struct myChannelsView: View {
                         .fontWeight(.semibold)
                         .foregroundColor(Color.white)
                         .padding()
-                        .background(Color.cyan)
-                        .cornerRadius(8)
+                        .background(Color(red: 128/255.0, green: 155/255.0, blue: 205/255.0))            .cornerRadius(8)
                         .padding()
                 }
             }
