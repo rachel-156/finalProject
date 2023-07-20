@@ -14,17 +14,16 @@ struct trackerView: View {
                 Color(red: 241/255, green: 239/255, blue: 231/255)
                     .ignoresSafeArea()
                 VStack{
-                    HStack{
-                        Spacer()
-                        Image("Logo")
-                            .resizable(resizingMode: .stretch)
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 200, height: 200)
-                    }
-                    Text("Click here to track your progress")
+                    Image("Logo")
+                        .resizable(resizingMode: .stretch)
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 200, height: 200)
+                    Spacer()
+                    Text("Select a tracker to see your progress")
                         .font(.title)
                         .fontWeight(.semibold)
                         .multilineTextAlignment(.center)
+                    Spacer()
                     NavigationLink(destination: sleepTrackerView()) {
                         Text("Sleep Tracker")
                             .font(.title2)
@@ -55,6 +54,7 @@ struct trackerView: View {
                             .cornerRadius(8)
                             .padding()
                     }
+                    Spacer()
                 }
             }
         }

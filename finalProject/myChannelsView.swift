@@ -11,9 +11,20 @@ struct myChannelsView: View {
     var body: some View {
         NavigationStack {
             VStack {
+                Spacer()
                 Text("Channels")
                     .font(.largeTitle)
-                Text("Click each channel to go to them")
+                    .fontWeight(.heavy)
+                Spacer()
+                
+                Image(systemName: "filemenu.and.selection")
+                    .resizable()
+                    .frame(width: 150, height: 150)
+                    .padding()
+                
+                Spacer()
+                Text("Click on a channel to explore!")
+                    .font(.title3)
                 NavigationLink(destination: SupportChannel()) {
                     Text("Support Channel")
                         .font(.title2)
@@ -57,7 +68,6 @@ struct myChannelsView: View {
                         .cornerRadius(8)
                         .padding()
                 }
-                
             }
         }
     }

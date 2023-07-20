@@ -23,7 +23,7 @@ struct GeneralHelp: View {
                 .multilineTextAlignment(.center)
                 .padding()
             
-            Image(systemName: "person.fill.questionmark")
+            Image(systemName: "questionmark.circle")
                 .resizable()
                 .frame(width: 150, height: 150)
                 .padding()
