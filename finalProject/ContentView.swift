@@ -29,12 +29,7 @@ struct ContentView: View {
                 }
                 .tag(4)
             
-            searchView()
-                .tabItem {
-                    Image(systemName: "magnifyingglass")
-                    Text("Search")
-                }
-                .tag(1)
+           
             
             myChannelsView()
                 .tabItem {

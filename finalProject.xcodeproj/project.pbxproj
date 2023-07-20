@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		592FC0252A69897200EB6429 /* SupportChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592FC0242A69897200EB6429 /* SupportChannel.swift */; };
+		592FC0272A698A2B00EB6429 /* MentalHealth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592FC0262A698A2B00EB6429 /* MentalHealth.swift */; };
+		592FC0292A698A4900EB6429 /* Tutoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592FC0282A698A4900EB6429 /* Tutoring.swift */; };
+		592FC02B2A698A9E00EB6429 /* GeneralHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592FC02A2A698A9E00EB6429 /* GeneralHelp.swift */; };
 		8C7CAE842A68259C002734C7 /* homeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7CAE832A68259C002734C7 /* homeView.swift */; };
-		8C7CAE862A6825BD002734C7 /* searchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7CAE852A6825BD002734C7 /* searchView.swift */; };
 		8C7CAE882A6825D1002734C7 /* myChannelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7CAE872A6825D1002734C7 /* myChannelsView.swift */; };
 		8C7CAE8A2A6825DD002734C7 /* profileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7CAE892A6825DD002734C7 /* profileView.swift */; };
 		8CE7A24B2A619596000C44EA /* finalProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE7A24A2A619596000C44EA /* finalProjectApp.swift */; };
@@ -22,8 +25,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		592FC0242A69897200EB6429 /* SupportChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportChannel.swift; sourceTree = "<group>"; };
+		592FC0262A698A2B00EB6429 /* MentalHealth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentalHealth.swift; sourceTree = "<group>"; };
+		592FC0282A698A4900EB6429 /* Tutoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutoring.swift; sourceTree = "<group>"; };
+		592FC02A2A698A9E00EB6429 /* GeneralHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralHelp.swift; sourceTree = "<group>"; };
 		8C7CAE832A68259C002734C7 /* homeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeView.swift; sourceTree = "<group>"; };
-		8C7CAE852A6825BD002734C7 /* searchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchView.swift; sourceTree = "<group>"; };
 		8C7CAE872A6825D1002734C7 /* myChannelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myChannelsView.swift; sourceTree = "<group>"; };
 		8C7CAE892A6825DD002734C7 /* profileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileView.swift; sourceTree = "<group>"; };
 		8CE7A2472A619596000C44EA /* finalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,8 +80,11 @@
 				D5BFC5852A6832F800C208D2 /* sleepTrackerView.swift */,
 				D5BFC5872A68333900C208D2 /* moodTrackerView.swift */,
 				D5BFC5892A68335900C208D2 /* studyTrackerView.swift */,
-				8C7CAE852A6825BD002734C7 /* searchView.swift */,
 				8C7CAE872A6825D1002734C7 /* myChannelsView.swift */,
+				592FC02A2A698A9E00EB6429 /* GeneralHelp.swift */,
+				592FC0282A698A4900EB6429 /* Tutoring.swift */,
+				592FC0262A698A2B00EB6429 /* MentalHealth.swift */,
+				592FC0242A69897200EB6429 /* SupportChannel.swift */,
 				8C7CAE892A6825DD002734C7 /* profileView.swift */,
 				8CE7A24E2A619597000C44EA /* Assets.xcassets */,
 				8CE7A2502A619597000C44EA /* Preview Content */,
@@ -161,16 +170,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C7CAE862A6825BD002734C7 /* searchView.swift in Sources */,
 				D5BFC5862A6832F800C208D2 /* sleepTrackerView.swift in Sources */,
+				592FC02B2A698A9E00EB6429 /* GeneralHelp.swift in Sources */,
 				D5BFC5882A68333900C208D2 /* moodTrackerView.swift in Sources */,
 				8CE7A24D2A619596000C44EA /* ContentView.swift in Sources */,
+				592FC0292A698A4900EB6429 /* Tutoring.swift in Sources */,
+				592FC0272A698A2B00EB6429 /* MentalHealth.swift in Sources */,
 				8C7CAE8A2A6825DD002734C7 /* profileView.swift in Sources */,
 				8C7CAE882A6825D1002734C7 /* myChannelsView.swift in Sources */,
 				D5BFC5842A682FB600C208D2 /* trackerView.swift in Sources */,
 				D5BFC58A2A68335900C208D2 /* studyTrackerView.swift in Sources */,
 				8CE7A24B2A619596000C44EA /* finalProjectApp.swift in Sources */,
 				8C7CAE842A68259C002734C7 /* homeView.swift in Sources */,
+				592FC0252A69897200EB6429 /* SupportChannel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

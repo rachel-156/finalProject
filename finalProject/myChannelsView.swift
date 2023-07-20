@@ -9,10 +9,60 @@ import SwiftUI
 
 struct myChannelsView: View {
     var body: some View {
-        Text("This is the channels view")
+        NavigationStack {
+            VStack {
+                Text("Channels")
+                    .font(.largeTitle)
+                Text("Click each channel to go to them")
+                NavigationLink(destination: SupportChannel()) {
+                    Text("Support Channel")
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color.white)
+                        .padding()
+                        .background(Color.cyan)
+                        .cornerRadius(8)
+                        .padding()
+                }
+                
+                NavigationLink(destination: MentalHealth()) {
+                    Text("Mental Help Channel")
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color.white)
+                        .padding()
+                        .background(Color.cyan)
+                        .cornerRadius(8)
+                        .padding()
+                }
+                
+                NavigationLink(destination: Tutoring()) {
+                    Text("Tutoring Channel")
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color.white)
+                        .padding()
+                        .background(Color.cyan)
+                        .cornerRadius(8)
+                        .padding()
+                }
+                
+                NavigationLink(destination: GeneralHelp()) {
+                    Text("General Help Channel")
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color.white)
+                        .padding()
+                        .background(Color.cyan)
+                        .cornerRadius(8)
+                        .padding()
+                }
+                
+            }
+        }
     }
 }
-
+    
 struct myChannelsView_Previews: PreviewProvider {
     static var previews: some View {
         myChannelsView()
