@@ -8,22 +8,43 @@
 import SwiftUI
 
 struct sleepTrackerView: View {
-    /*
-    var startTime: String
-    var endTime: String
-    func calculateSleep(startTime: String, endTime: String) {
-        if startTime.suffix(2) == "AM" {
-            startTime = String(12 - Int(startTime.dropLast(3)))
-        }
-    }
-     */
+    @State private var startTime = ""
+    @State private var endTime = ""
+    @State private var timeDifferenceText = ""
+    
     var body: some View {
-        VStack{
-            Text("This is the Sleep Tracker")
-            //TextField("Time you went to sleep:", text: startTime)
-            //TextField("Time you woke up:", text: endTime)
+        VStack {
+            TextField("Start Time", text: $startTime)
+            TextField("End Time", text: $endTime)
+            Button("Calculate") {
+                calculateButtonTapped()
+            }
+            Text(timeDifferenceText)
         }
         .padding()
+    }
+    
+    func calculateButtonTapped() {
+        if let startTimeDate = convertToMilitaryTime(standardTime: startTime),
+           let endTimeDate = convertToMilitaryTime(standardTime: endTime) {
+            let timeDifference = calculateTimeDifference(start: startTimeDate, end: endTimeDate)
+            timeDifferenceText = "Time Difference: \(timeDifference.hours) hours and \(timeDifference.minutes) minutes"
+        } else {
+            timeDifferenceText = "Invalid time format. Please do not forget to include AM or PM"
+        }
+    }
+    
+    func convertToMilitaryTime(standardTime: String) -> Date? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "h:mm a"
+        return dateFormatter.date(from: standardTime)
+    }
+    
+    func calculateTimeDifference(start: Date, end: Date) -> (hours: Int, minutes: Int) {
+        let timeInterval = end.timeIntervalSince(start)
+        let minutes = Int(timeInterval / 60)
+        let hours = minutes / 60
+        return (hours, minutes % 60)
     }
 }
 
