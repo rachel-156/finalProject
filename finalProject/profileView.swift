@@ -12,7 +12,7 @@ struct profileView: View {
     @State private var username: String = ""
     @State private var password: String = ""
     @State private var loginMessage: String = ""
-
+    @State var canSubmit = false
     
     // dictionary/map of usernames and passwords
     let logins = ["Rachel": "Rl", "Amulya": "Ac", "Raaina": "Rd", "Grace": "Gx"]
@@ -35,16 +35,21 @@ struct profileView: View {
                         .padding(.horizontal)
                         .font(.title)
                     
+                    NavigationLink(destination : homeView(), isActive: $canSubmit){
+                        Text("")
+                    }
                     
                     Button("Login") {
                         loginMessage = validLogin(user: username, pass: password)
                         if(loginMessage == "correct"){
-                            NavigationLink(destination: homeView()){
-                            }
+                            self.canSubmit = true
+                        } else{
+                            self.canSubmit = false
                         }
                     }
                     .font(.title2)
                     .padding(.trailing)
+                    
                     
                     Text(loginMessage)
                         .font(.title)
