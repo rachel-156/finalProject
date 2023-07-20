@@ -14,10 +14,14 @@ struct trackerView: View {
                 Color(red: 241/255, green: 239/255, blue: 231/255)
                     .ignoresSafeArea()
                 VStack{
-                    Image("Logo")
-                        .resizable(resizingMode: .stretch)
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 200, height: 200)
+                    HStack{
+                        Spacer()
+                        Image("Logo")
+                            .resizable(resizingMode: .stretch)
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 150, height: 100)
+                            .ignoresSafeArea()
+                    }
                     Spacer()
                     Text("Select a tracker to see your progress")
                         .font(.title)

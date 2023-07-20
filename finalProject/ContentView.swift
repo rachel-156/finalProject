@@ -9,10 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selectedTab = 0
-    
+    @State private var username: String = "" // Provide a valid username here for preview
     var body: some View {
         TabView(selection: $selectedTab) {
-            homeView()
+            homeView(username: $username)
                 .tabItem {
                     Image(systemName: "house.fill")
                     VStack{
