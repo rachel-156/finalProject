@@ -25,6 +25,18 @@ struct profileView: View {
                     .ignoresSafeArea()
                 
                 VStack{
+                    
+                    Text("Sign In")
+                        .font(.largeTitle)
+                        .fontWeight(.heavy)
+                        .foregroundColor(Color.black)
+                    
+                    Image(systemName: "person.badge.key")
+                        .resizable()
+                        .frame(width: 150, height: 150)
+                        .padding()
+                    
+                    
                     TextField(" Username", text: $username)
                         .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
                         .padding(.horizontal)
@@ -50,12 +62,13 @@ struct profileView: View {
                     .font(.title2)
                     .padding(.trailing)
                     
-                    
-                    Text(loginMessage)
-                        .font(.title)
-                        .fontWeight(.medium)
-                        .multilineTextAlignment(.center)
-                        .padding(.top)
+                    if(loginMessage != "correct"){
+                        Text(loginMessage)
+                            .font(.title)
+                            .fontWeight(.medium)
+                            .multilineTextAlignment(.center)
+                            .padding(.top)
+                    }
                 }
             }
         }
