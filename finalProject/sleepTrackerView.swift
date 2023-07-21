@@ -14,12 +14,21 @@ struct sleepTrackerView: View {
     @State private var personalizedMessage = ""
         
     var body: some View {
+        ZStack{
+            Color(red: 241/255, green: 239/255, blue: 231/255)
+                .ignoresSafeArea()
             VStack {
                 Text("Sleep Tracker")
                     .font(.largeTitle)
+                    .fontWeight(.bold)
+                Text("Enter the time you go to sleep and the time you wake up to find out how many hours of sleep you get each night.")         .multilineTextAlignment(.center)
+                    .font(.headline)
+                    .fontWeight(.semibold)
+                    .foregroundColor(Color.black)
                     .padding()
-                Text("Enter the time you go to sleep and the time you wake up to find out how many hours of sleep you get each night. Then learn about how much sleep is just right and if you are within that range!")
-                    .multilineTextAlignment(.center)
+                    .background(Color(red: 128/255.0, green: 155/255.0, blue: 205/255.0))
+                    .cornerRadius(8)
+                    
                 Image(systemName: "bed.double")
                     .resizable()
                     .frame(width: 200, height: 150)
@@ -32,15 +41,28 @@ struct sleepTrackerView: View {
                     calculateButtonTapped()
                 }
                     .font(.title2)
-                Text(timeDifferenceText)
+                    .fontWeight(.semibold)
+                    .foregroundColor(Color.black)
                     .padding()
+                    .background(Color(red: 149/255.0, green: 180/255.0, blue: 201/255.0))
+                    .cornerRadius(8)
+                Text(timeDifferenceText)
                     .multilineTextAlignment(.center)
-                Text(personalizedMessage) // Display personalized message here
-                    .font(.headline)
-                    .multilineTextAlignment(.center)
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                if personalizedMessage.count > 0 {
+                    Text(personalizedMessage)
+                        .multilineTextAlignment(.center)
+                        .font(.headline)
+                        .fontWeight(.semibold)
+                        .padding()
+                        .background(Color(red: 184/255.0, green: 224/255.0, blue: 210/255.0))
+                        .cornerRadius(8)
+                }
             }
         .padding()
     }
+        }
         
     func calculateButtonTapped() {
         if let startTimeDate = convertToMilitaryTime(standardTime: startTime),
@@ -78,7 +100,7 @@ struct sleepTrackerView: View {
         if hours >= 10 {
             return "You had too much sleep! Although it is good to get a good night's rest, keep in mind that getting too much sleep can also be a bad thing!"
         } else if hours <= 6 {
-            return "You should try to get more sleep. Although it might be tempting to stay up late playing videogames or maybe even cramming last minute for an exam, remember that sleep is very important to being healthy!"
+            return "You should try to get more sleep. Although it might be tempting to stay up late playing videogames or maybe even cramming last minute for an exam, remember that sleep is very important!"
         } else {
             return "You slept for just the right amount of hours. Keep up the good work and remember to sleep at consistent hours so that your body maintains its sleep schedule and you wake up to feel the most well rested!"
         }
