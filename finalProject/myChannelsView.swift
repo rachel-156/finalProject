@@ -17,13 +17,19 @@ struct myChannelsView: View {
                         Text("Channels")
                             .font(.largeTitle)
                             .fontWeight(.heavy)
+                            .padding(.bottom, 2)
+
+
+                        Text("Click on a channel to explore!")
+                            .font(.title3)
+                            .fontWeight(.bold)
+                            .padding(.bottom, 25)
+                        
                         Image(systemName: "filemenu.and.selection")
                             .resizable()
                             .frame(width: 150, height: 150)
                             .padding(.bottom)
-                        Text("Click on a channel to explore!")
-                            .font(.title3)
-                            .fontWeight(.bold)
+                        
                         NavigationLink(destination: Tutoring()) {
                             Text("Tutoring Channel")
                                 .font(.title2)

@@ -14,10 +14,23 @@ struct trackerView: View {
                 Color(red: 241/255, green: 239/255, blue: 231/255)
                     .ignoresSafeArea()
                 VStack{
+                    
+                    Text("Trackers")
+                        .font(.largeTitle)
+                        .fontWeight(.heavy)
+                        .padding(.bottom, 2)
+                    
                     Text("Select a tracker to see your progress")
-                        .font(.title)
+                        .font(.title3)
                         .fontWeight(.semibold)
                         .multilineTextAlignment(.center)
+                        .padding(.bottom, 25)
+                    
+                    Image(systemName: "scope")
+                        .resizable()
+                        .frame(width: 150, height: 150)
+                        .padding(.bottom)
+
                     NavigationLink(destination: sleepTrackerView()) {
                         Text("Sleep Tracker")
                             .font(.title2)

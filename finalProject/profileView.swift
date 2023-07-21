@@ -32,15 +32,20 @@ struct profileView: View {
                         .resizable()
                         .frame(width: 150, height: 150)
                         .padding(.bottom)
+                        
 
                     TextField(" Username", text: $username)
                         .border(Color.black, width: 1)
                         .padding(.horizontal)
                         .font(.title)
+                        .bold()
+                        .foregroundColor(Color(red: 128/255.0, green: 155/255.0, blue: 205/255.0))
 
                     TextField(" Password", text: $password)
                         .border(Color.black, width: 1)
                         .padding(.horizontal)
+                        .foregroundColor(Color(red: 128/255.0, green: 155/255.0, blue: 205/255.0))
+                        .bold()
                         .font(.title)
 
                     NavigationLink(destination: homeView(username: $username), isActive: $canSubmit) {
@@ -58,7 +63,9 @@ struct profileView: View {
                     .font(.title2)
                     .foregroundColor(.black)
                     .padding(10)
-                    .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: 3)
+                    .background(Color(red: 149/255, green: 180/255, blue: 201/255))
+                    .padding(10)
+                    
 
                     if(loginMessage != "correct") {
                         Text(loginMessage)
