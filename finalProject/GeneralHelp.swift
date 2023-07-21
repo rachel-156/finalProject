@@ -31,7 +31,7 @@ struct GeneralHelp: View {
                     .padding()
                 Image(systemName: "questionmark.app")
                     .resizable()
-                    .foregroundColor(Color(red: 128/255.0, green: 155/255.0, blue: 205/255.0))
+                    .foregroundColor(Color(red: 184/255.0, green: 224/255.0, blue: 210/255.0))
                     .frame(width: 150, height: 150)
                 Text("What do you need help with?")
                     .font(.title3)
@@ -51,7 +51,7 @@ struct GeneralHelp: View {
                 .fontWeight(.semibold)
                 .foregroundColor(Color.black)
                 .padding()
-                .background(Color(red: 128/255.0, green: 155/255.0, blue: 205/255.0))
+                .background(Color(red: 184/255.0, green: 224/255.0, blue: 210/255.0))
                 .cornerRadius(8)
                 
                 if !commentSection.isEmpty {
@@ -61,7 +61,7 @@ struct GeneralHelp: View {
                                 .font(.title2)
                         } icon: {
                             Image(systemName: "message.badge")
-                                .foregroundColor(Color(red: 128/255.0, green: 155/255.0, blue: 205/255.0))
+                                .foregroundColor(Color(red: 184/255.0, green: 224/255.0, blue: 210/255.0))
                         }
                     }
                 }

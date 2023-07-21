@@ -10,15 +10,17 @@ import SwiftUI
 struct homeView: View {
     @State private var selectedTab = 0
     @Binding var username: String
+
     var body: some View {
         ZStack{
             Color(red: 241/255, green: 239/255, blue: 231/255)
                 .ignoresSafeArea()
             VStack{
                 Spacer()
-                Text("Welcome \(username), to StudentSpeak!")
+                Text("Welcome to StudentSpeak \(username)!")
                     .font(.title)
                     .fontWeight(.bold)
+                    .multilineTextAlignment(.center)
                 Image("Logo")
                 Text("Did you know almost 9 in 10 students who face academic challenges say that their mental health is affected? Additionally, 28% of students said they often feel isolated from others.")
                     .font(.title2)

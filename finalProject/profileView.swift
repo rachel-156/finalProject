@@ -13,13 +13,11 @@ struct profileView: View {
     @State private var loginMessage: String = ""
     @State var canSubmit = false
 
-    // dictionary/map of usernames and passwords
     let logins = ["Rachel": "Rl", "Amulya": "Ac", "Raaina": "Rd", "Grace": "Gx"]
 
     var body: some View {
         NavigationStack {
             ZStack{
-                //background
                 Color(red: 241/255, green: 239/255, blue: 231/255)
                     .ignoresSafeArea()
 
@@ -30,10 +28,10 @@ struct profileView: View {
                         .fontWeight(.heavy)
                         .foregroundColor(Color.black)
 
-                    Image(systemName: "person.badge.key")
+                    Image(systemName: "lock.square")
                         .resizable()
                         .frame(width: 150, height: 150)
-                        .padding()
+                        .padding(.bottom)
 
                     TextField(" Username", text: $username)
                         .border(Color.black, width: 1)
@@ -58,7 +56,9 @@ struct profileView: View {
                         }
                     }
                     .font(.title2)
-                    .padding(.trailing)
+                    .foregroundColor(.black)
+                    .padding(10)
+                    .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: 3)
 
                     if(loginMessage != "correct") {
                         Text(loginMessage)

@@ -15,6 +15,7 @@ struct ContentView: View {
             homeView(username: $username)
                 .tabItem {
                     Image(systemName: "house.fill")
+                        .foregroundColor(Color.pink)
                     VStack{
                         Text("Home")
                     }
