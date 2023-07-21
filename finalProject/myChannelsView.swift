@@ -36,7 +36,7 @@ struct myChannelsView: View {
                         }
                         
                         NavigationLink(destination: MentalHealth()) {
-                            Text("Mental Help Channel")
+                            Text("Mental Health Channel")
                                 .font(.title2)
                                 .fontWeight(.semibold)
                                 .foregroundColor(Color.black)

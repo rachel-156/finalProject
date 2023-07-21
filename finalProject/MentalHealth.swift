@@ -28,6 +28,14 @@ struct MentalHealth: View {
                     .resizable()
                     .foregroundColor(Color(red: 149/255.0, green: 180/255.0, blue: 201/255.0))
                     .frame(width: 150, height: 150)
+                NavigationLink(destination: Web2View()) {
+                    Text("Find Mental Health Resources")
+                        .font(.title2)
+                        .foregroundColor(.black)
+                        .padding(10)
+                        .border(Color.black, width: 3)
+                        .padding(.vertical)
+                }
                 Text("How are you feeling today?")
                     .font(.title3)
                     .fontWeight(.bold)
