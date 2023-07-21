@@ -20,7 +20,7 @@ struct homeView: View {
                     .font(.title)
                     .fontWeight(.bold)
                     .padding()
-                    .border(Color(red: 128/255.0, green: 155/255.0, blue: 205/255.0), width: 3)
+                    .border(Color(red: 149/255, green: 180/255, blue: 201/255), width: 3)
                     .cornerRadius(10)
                     .multilineTextAlignment(.center)
                 Image("betterLogo")

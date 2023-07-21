@@ -27,6 +27,12 @@ struct profileView: View {
                         .font(.largeTitle)
                         .fontWeight(.heavy)
                         .foregroundColor(Color.black)
+                        .padding(.bottom, 2)
+                    
+                    Text("Type in your credentials")
+                        .font(.title3)
+                        .fontWeight(.bold)
+                        .padding(.bottom, 25)
 
                     Image(systemName: "lock.square")
                         .resizable()
@@ -66,13 +72,15 @@ struct profileView: View {
                     .background(Color(red: 149/255, green: 180/255, blue: 201/255))
                     .padding(10)
                     
-
-                    if(loginMessage != "correct") {
+  
+                    if(loginMessage != "correct" && loginMessage.count > 0) {
                         Text(loginMessage)
                             .font(.title)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
-                            .padding(.top)
+                            .padding()
+                            .background(Color(red: 184/255.0, green: 224/255.0, blue: 210/255.0))
+                            .cornerRadius(10)
                     }
                 }
             }
