@@ -48,7 +48,7 @@ struct studyTrackerView: View {
                                 .stroke(Color.gray, lineWidth: 4)
                         )
                 
-                Slider(value: $vm.minutes, in: 1...25, step: 1)
+                Slider(value: $vm.minutes, in: 1...10, step: 1)
                     .padding()
                     .disabled(vm.isActive)
                     .animation(.easeInOut, value: vm.minutes)
