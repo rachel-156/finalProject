@@ -27,13 +27,10 @@ struct studyTrackerView: View {
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .padding(.bottom, 5)
-                    
-
-                    
-                    Text("Move the slider to set your desired work time.")
-                        .font(.title3)
-                        .multilineTextAlignment(.center)
-                        .padding(.bottom, 5)
+                    Text("Move the slider to set your desired work time.")         .multilineTextAlignment(.center)
+                        .font(.headline)
+                        .fontWeight(.semibold)
+                        .padding(.bottom, 25)
                     
                     Text("\(vm.time)")
                         .font(.system(size: 70, weight: .medium, design: .rounded))
@@ -48,7 +45,7 @@ struct studyTrackerView: View {
                         .cornerRadius(20)
                         .overlay(
                                 RoundedRectangle(cornerRadius: 20)
-                                    .stroke(Color(red: 128/255.0, green: 155/255.0, blue: 205/255.0), lineWidth: 6)
+                                    .stroke(Color(red: 184/255.0, green: 224/255.0, blue: 210/255.0), lineWidth: 6)
                             )
                         .padding(.top, 5)
                     
@@ -57,7 +54,7 @@ struct studyTrackerView: View {
                         .disabled(vm.isActive)
                         .animation(.easeInOut, value: vm.minutes)
                         .frame(width: width)
-                        .accentColor(Color(red: 149/255.0, green: 180/255.0, blue: 201/255.0))
+                        .accentColor(Color(red: 184/255.0, green: 224/255.0, blue: 210/255.0))
 
 
                     HStack(spacing:50) {
@@ -92,11 +89,14 @@ struct studyTrackerView: View {
                     .background(Color(red: 184/255.0, green: 224/255.0, blue: 210/255.0))
                     .cornerRadius(8)
                     .padding()
-    
                     Text(learnMore)
-                        .font(.title2)
                         .multilineTextAlignment(.center)
-                        .padding(.all)
+                        .font(.headline)
+                        .fontWeight(.semibold)
+                        .padding()
+                        .border(Color(red: 184/255.0, green: 224/255.0, blue: 210/255.0), width: 6)
+                        .cornerRadius(8)
+                        .padding()
                 }
                 .onReceive(timer) { _ in
                     vm.updateCountdown()

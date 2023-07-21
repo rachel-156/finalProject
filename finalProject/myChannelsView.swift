@@ -17,12 +17,12 @@ struct myChannelsView: View {
                         Text("Channels")
                             .font(.largeTitle)
                             .fontWeight(.heavy)
-                            .padding(.bottom, 2)
-
+                            .padding(.bottom, 5)
 
                         Text("Click on a channel to explore!")
                             .font(.title3)
-                            .fontWeight(.bold)
+                            .fontWeight(.semibold)
+                            .multilineTextAlignment(.center)
                             .padding(.bottom, 25)
                         
                         Image(systemName: "filemenu.and.selection")

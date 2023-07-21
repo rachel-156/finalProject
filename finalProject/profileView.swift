@@ -26,12 +26,10 @@ struct profileView: View {
                     Text("Sign In")
                         .font(.largeTitle)
                         .fontWeight(.heavy)
-                        .foregroundColor(Color.black)
-                        .padding(.bottom, 2)
-                    
-                    Text("Type in your credentials")
-                        .font(.title3)
-                        .fontWeight(.bold)
+                        .padding(.bottom, 5)
+                    Text("Type in your credentials below.")         .font(.title3)
+                        .fontWeight(.semibold)
+                        .multilineTextAlignment(.center)
                         .padding(.bottom, 25)
 
                     Image(systemName: "lock.square")
@@ -67,20 +65,23 @@ struct profileView: View {
                         }
                     }
                     .font(.title2)
-                    .foregroundColor(.black)
-                    .padding(10)
+                    .fontWeight(.semibold)
+                    .foregroundColor(Color.black)
+                    .padding()
                     .background(Color(red: 149/255, green: 180/255, blue: 201/255))
+                    .cornerRadius(8)
                     .padding(10)
                     
   
                     if(loginMessage != "correct" && loginMessage.count > 0) {
                         Text(loginMessage)
-                            .font(.title)
-                            .fontWeight(.medium)
                             .multilineTextAlignment(.center)
+                            .font(.headline)
+                            .fontWeight(.semibold)
                             .padding()
                             .background(Color(red: 184/255.0, green: 224/255.0, blue: 210/255.0))
-                            .cornerRadius(10)
+                            .cornerRadius(8)
+                            .padding(5)
                     }
                 }
             }

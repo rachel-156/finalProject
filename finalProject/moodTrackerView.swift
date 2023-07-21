@@ -18,9 +18,11 @@ struct moodTrackerView: View {
                     Text("Mood Tracker")
                         .font(.largeTitle)
                         .fontWeight(.bold)
-                    Text("Select your mood...")
-                        .font(.title2)
-                        .fontWeight(.medium)
+                        .padding(.bottom, 5)
+                    Text("Select your mood...")         .multilineTextAlignment(.center)
+                        .font(.headline)
+                        .fontWeight(.semibold)
+                        .padding(.bottom, 25)
                     HStack{
                         Button("😄") {
                             customMessage = "You are radiating with happiness! Remember to enjoy life and spread your joy to others!"
@@ -49,12 +51,11 @@ struct moodTrackerView: View {
                     .padding()
                     if customMessage.count > 0 {
                         Text(customMessage)
-                            .font(.title3)
-                            .fontWeight(.semibold)
-                            .foregroundColor(Color.black)
                             .multilineTextAlignment(.center)
+                            .font(.headline)
+                            .fontWeight(.semibold)
                             .padding()
-                            .background(Color(red: 128/255.0, green: 155/255.0, blue: 205/255.0))
+                            .background(Color(red: 149/255.0, green: 180/255.0, blue: 201/255.0))
                             .cornerRadius(8)
                             .padding()
                             

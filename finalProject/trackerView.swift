@@ -18,7 +18,7 @@ struct trackerView: View {
                     Text("Trackers")
                         .font(.largeTitle)
                         .fontWeight(.heavy)
-                        .padding(.bottom, 2)
+                        .padding(.bottom, 5)
                     
                     Text("Select a tracker to see your progress")
                         .font(.title3)
