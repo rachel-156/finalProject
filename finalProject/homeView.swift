@@ -16,7 +16,6 @@ struct homeView: View {
             Color(red: 241/255, green: 239/255, blue: 231/255)
                 .ignoresSafeArea()
             VStack{
-                Spacer()
                 Text("Welcome to StudentSpeak \(username)!")
                     .font(.title)
                     .fontWeight(.bold)
@@ -25,12 +24,15 @@ struct homeView: View {
                 Text("Did you know almost 9 in 10 students who face academic challenges say that their mental health is affected? Additionally, 28% of students said they often feel isolated from others.")
                     .font(.title2)
                     .multilineTextAlignment(.center)
-                Spacer()
+                    .padding()
+                    .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: 3)
+                    .cornerRadius(10)
+
                 Text("Speak now to solve the growing student mental health crisis.")
                     .font(.title2)
                     .fontWeight(.bold)
                     .multilineTextAlignment(.center)
-                Spacer()
+                    .padding(.top)
             }
             .padding()
         }
